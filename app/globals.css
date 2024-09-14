@@ -4,16 +4,17 @@
   outline: none;
   /* box-sizing: border-box; */
 }
-.section_about_section2_title_phone{
+
+/* .navbar_container_phone{
   display: none;
-}
-.navbar_container_phone{
-  display: none;
-}
+} */
 .section_about_section1_who_ami_image1{
   display: none;
 }
 /* section_home start */
+.section_home_title_navbar{
+  display: none;
+}
 .navfixed{
   margin-bottom: 100px;
 }
@@ -27,7 +28,7 @@
   overflow-y: hidden;
 
 }
-.section_home_title{
+.section_home_title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,6 +152,14 @@ padding: 5px;
   margin-right: 100px;
   display: block; 
             transform: scaleX(-1);
+}
+
+.logohiiden{
+  display: none;
+}
+.logofixed{
+  display: block;
+  width: 50px;
 }
 /* section_home end */
 
@@ -614,7 +623,7 @@ margin-top: 5px;
 
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:935px) {
 
 
 
@@ -636,19 +645,59 @@ margin-top: 5px;
 /* phone */
 @media screen and (max-width:850px) {
 /* section home strat */
-.navbar_container_phone{
+.section_home_title_navbar {
+  width: 100%;
   display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #000;
+  /* padding-top: 20px; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
 }
+.section_home_title_part1_navbar,.section_home_title_part3_navbar{
+  font-size: 2rem;
+}
+.section_home_title_part1_navbar{
+  color:#fca311
+
+
+}
+.section_home_title_part2_image_navbar{
+  width: 55px;
+  height: fit-content;
+}
+.section_home_title_part3_navbar{
+  color: #e5e5e5;
+}
+
+
+
+
+
+
+
+
+
+/* .navbar_container_phone{
+  display: block;
+} */
 .navfixed , .section_home_navbar ,.fixed  {
   display: none;
 }
 .section_home_title{
-  margin-top: 50px;
+display: none;
+
 }
 
 
 
-
+/* 
 .section_home_title_part1,.section_home_title_part3{
   font-size: 2rem;
 }
@@ -659,10 +708,10 @@ margin-top: 5px;
 }
 .section_home_title_part3{
   color: #e5e5e5;
-}
+} */
 
 
-
+/* 
 .section_navbar_links{
   display: flex;
   flex-direction: column;
@@ -687,10 +736,9 @@ margin-top: 10px;
 
 .section_home_navbar_link_navbar:hover{
   color: #fca311;
-}
-
+} */
+/* 
 .navbar_container_phone{
-  /* background: white; */
   background-color: #000;
   box-shadow: 2px 2px 5px #e5e5e5;
 width: 100%;
@@ -709,8 +757,8 @@ z-index: 999;
   width: 50px;
   height: fit-content;
   margin-left: 50px;
-}
-.menu-btn {
+} */
+/* .menu-btn {
   border: none;
   background: none;
   color: #e5e5e5;
@@ -721,19 +769,19 @@ z-index: 999;
 }
 
 .menu-btn:hover {
-  transform: scale(1.1); /* Optional: Add a hover effect */
+  transform: scale(1.1); 
 }
 
 .menu-bar.open .menu-btn {
-  transform: rotate(90deg); /* Rotate the menu icon when menu is open */
-}
+  transform: rotate(90deg);
+} */
+
 .section_home_content_img{
   display: none;
 }
 .section_home_content{
-  margin-top: 30px;
+  margin-top: 100px;
   width: 100%;
-
 
 }
 
@@ -773,9 +821,7 @@ text-align: center;
 
  
 /* section about me start */
-.section_about_section2_title_phone{
-  display: block;
-}
+
 .section_about_title{
 
   font-size: 2rem;
@@ -791,7 +837,7 @@ text-align: center;
 
 
 
-  .section_about_section1{
+  .section_about_section1 {
     flex-wrap: wrap;
 
   }
@@ -802,7 +848,7 @@ text-align: center;
     padding: 10px;
     
   }
-  .section_about_section1_who_ami_text{
+  .section_about_section1_who_ami_text {
     font-size: 0.9rem;
     width: 90%;
  
@@ -825,7 +871,7 @@ text-align: center;
 
     margin-top: 10px;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 
   }
 
@@ -850,15 +896,20 @@ margin-top: 10px;
     font-size: 1.2rem;
 
   }
- .section_about_section2_content{
-  display: none;
+.section_about_section2_content{
+  width: 100%;
+}
+ .section_about_section2_content_text,.section_about_section2_content_link{
+  font-size: 0.9rem;
  }
-  .section_about_section2_title_phone{
-    background-color: #e5e5e5;
-    padding: 10px 20px ;
-    color: #fca311;
-    font-size: 1.1rem;
-  }
+ .section_about_section2_content_link {
+  padding-left: 40px; 
+}
+
+.section_about_section2_content_link::before {
+  left: 25px;
+}
+
 /* section about me end */
 
 

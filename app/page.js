@@ -1,8 +1,10 @@
 'use client'
 import React, { useState , useEffect } from 'react';
 import { FaGreaterThan, FaLessThan } from 'react-icons/fa';
-import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
+// import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
+import Contact from './contact/contact';
 
+import Faq from './faq/faq';
 function App(){
   const images = [
     'x.jfif',
@@ -42,7 +44,7 @@ function App(){
   return(
    <div className="profile">
     <div className="section_home">
-    <div className='navbar_container_phone'>
+    {/* <div className='navbar_container_phone'>
     <img src='/logo.svg' alt='logo' className='navbar_image_phone'/>
 
 
@@ -63,6 +65,7 @@ function App(){
           <a href="#about" className="section_home_navbar_link_navbar ">about me</a>
           <a href="#services" className="section_home_navbar_link_navbar ">services</a>
           <a href="#why_me" className="section_home_navbar_link_navbar ">why me?</a>
+
           <a href="#stories" className="section_home_navbar_link_navbar ">success stories</a>
           <a href="#contact" className="section_home_navbar_link_navbar ">contact</a>
           <a href="#FAQs" className="section_home_navbar_link_navbar ">FAQs</a>
@@ -74,23 +77,40 @@ function App(){
 }
 
 
-</div>
+</div> */}
 
 
-      <div  className={`section_home_title  ${isFixed ? 'navfixed' : ''}`}>
+      <div  className={` section_home_title  ${isFixed ? 'navfixed' : ''}`}>
         <h1 className="section_home_title_part1">MEDIA</h1>
         <img src="/logo.svg" alt="logo"className="section_home_title_part2_image"/>
         <h1 className="section_home_title_part3">BUYER</h1>
       </div>
+
+
+      <div  className='section_home_title_navbar'>
+        <h1 className="section_home_title_part1_navbar">MEDIA</h1>
+        <img src="/logo.svg" alt="logo"className="section_home_title_part2_image_navbar"/>
+        <h1 className="section_home_title_part3_navbar">BUYER</h1>
+      </div>
+
+
+
+
+
+
+
+
+
       <div   className={`section_home_navbar  ${isFixed ? 'fixed' : ''}`}>
           <a href="#about" className="section_home_navbar_link">about me</a>
           <a href="#services" className="section_home_navbar_link">services</a>
           <a href="#why_me" className="section_home_navbar_link">why me?</a>
+          <img src='/logo.svg' alt='logo'  className={`logohiiden  ${isFixed ? 'logofixed' : ''}`}/>
+
           <a href="#stories" className="section_home_navbar_link">success stories</a>
           <a href="#contact" className="section_home_navbar_link">contact</a>
           <a href="#FAQs" className="section_home_navbar_link">FAQs</a>
 
-         
           
       </div>
 
@@ -105,7 +125,7 @@ function App(){
         <p className="section_home_content_p4">Reach Me !!</p>
 
         </div>
-      <button className="section_home_button">contact me</button>
+      <button className="section_home_button" href="#contact">contact me</button>
       </div>
         <img src='/persone.jpg' alt="portfolio_image"   className="section_home_content_img"  />
       </div>
@@ -141,7 +161,7 @@ function App(){
 
 
 <div className='section_about_section2'>
-<h2 className='section_about_section2_title_phone'>Certifications</h2>
+{/* <h2 className='section_about_section2_title_phone'>Certifications</h2> */}
 
   <div className='section_about_section2_switch'>
 
@@ -228,7 +248,7 @@ I am committed to continuous learning and professional growth, which is reflecte
 
   </div>
 
-<a href='#about'  className='section_services_card_button'>Get Offer!</a>
+<a href='#contact'  className='section_services_card_button'>Get Offer!</a>
 
   </div>
 
@@ -275,7 +295,7 @@ I am committed to continuous learning and professional growth, which is reflecte
   </div>
 
 
-<a href='#about'  className='section_services_card_button'>Get Offer!</a>
+<a href='#contact'  className='section_services_card_button'>Get Offer!</a>
 
   </div>
 
@@ -524,13 +544,11 @@ of the improved advertising and strategy efforts.
 </div>
 
 
+<Contact/>
+<Faq/>
 
 
 
-
-<div className='section_questions'>
-
-</div>
 
    </div>
   )
